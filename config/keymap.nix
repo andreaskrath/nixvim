@@ -13,6 +13,13 @@ in {
 
     {
       mode = normal;
+      key = "<leader>lg";
+      action = ":LazyGit<cr>";
+      options.desc = "Open LazyGit";
+    }
+
+    {
+      mode = normal;
       key = "<leader>ff";
       action = ":Telescope find_files<cr>";
       options.desc = "Find project files";

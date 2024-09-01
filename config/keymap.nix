@@ -4,6 +4,7 @@ in {
   globals.mapleader = " ";
 
   keymaps = [
+    # nvim-tree
     {
       mode = normal;
       key = "<leader>F";
@@ -11,6 +12,7 @@ in {
       options.desc = "Open file tree";
     }
 
+    # lazy-git
     {
       mode = normal;
       key = "<leader>lg";
@@ -18,6 +20,7 @@ in {
       options.desc = "Open LazyGit";
     }
 
+    # telescope
     {
       mode = normal;
       key = "<leader>ff";

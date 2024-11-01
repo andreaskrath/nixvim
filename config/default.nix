@@ -11,6 +11,7 @@
     ./plugin/lazygit.nix
     ./plugin/cmp.nix
     ./plugin/treesitter.nix
+    ./plugin/web-devicons.nix
   ];
 
   colorschemes.gruvbox = {

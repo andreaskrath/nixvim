@@ -9,6 +9,7 @@
     ./plugin/which-key.nix
     ./plugin/telescope.nix
     ./plugin/lazygit.nix
+    ./plugin/treesitter.nix
   ];
 
   colorschemes.gruvbox.enable = true;

@@ -1,11 +1,12 @@
 let
   normal = "n";
+  visual = "v";
 in {
   globals.mapleader = " ";
 
   keymaps = [
     {
-      mode = normal;
+      mode = [normal visual];
       key = "gs";
       action = "^";
       options = {
@@ -16,7 +17,7 @@ in {
     }
 
     {
-      mode = normal;
+      mode = [normal visual];
       key = "gh";
       action = "0";
       options = {
@@ -27,7 +28,7 @@ in {
     }
 
     {
-      mode = normal;
+      mode = [normal visual];
       key = "gl";
       action = "$";
       options = {
@@ -38,7 +39,7 @@ in {
     }
 
     {
-      mode = normal;
+      mode = [normal visual];
       key = "0";
       action = "<Nop>";
       options = {
@@ -49,7 +50,7 @@ in {
     }
 
     {
-      mode = normal;
+      mode = [normal visual];
       key = "$";
       action = "<Nop>";
       options = {

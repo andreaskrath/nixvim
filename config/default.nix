@@ -9,6 +9,7 @@
     ./plugin/which-key.nix
     ./plugin/telescope.nix
     ./plugin/lazygit.nix
+    ./plugin/cmp.nix
     ./plugin/treesitter.nix
   ];
 

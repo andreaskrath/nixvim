@@ -116,6 +116,14 @@ in {
         desc = "Document diagnostics";
       };
     }
+    {
+      mode = normal;
+      key = "<leader>b";
+      action = ":Telescope buffers<cr>";
+      options = {
+        desc = "Open buffers";
+      };
+    }
 
     # diagnostics
     {

@@ -30,6 +30,10 @@
     nixd
   ];
 
+  extraConfigLuaPost = ''
+    vim.api.nvim_set_hl(0, "SignColumn", {})
+  '';
+
   clipboard.providers.xclip.enable = true;
 
   colorschemes.gruvbox = {

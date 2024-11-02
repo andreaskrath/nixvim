@@ -17,6 +17,7 @@
     ./plugin/trouble.nix
     ./plugin/conform.nix
     ./plugin/lsp.nix
+    ./plugin/gitsigns.nix
   ];
 
   viAlias = true;

@@ -18,6 +18,8 @@
     # disable mouse
     mouse = "";
 
+    guicursor = "n-c-sm:block,i-ci-ve:ver25,r-cr-o-v:hor20";
+
     updatetime = 0;
 
     termguicolors = true;

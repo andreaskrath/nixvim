@@ -36,7 +36,10 @@
     vim.api.nvim_set_hl(0, "SignColumn", {})
   '';
 
-  clipboard.providers.xclip.enable = true;
+  clipboard = {
+    register = "unnamedplus";
+    providers.xclip.enable = true;
+  };
 
   colorschemes.gruvbox = {
     enable = true;

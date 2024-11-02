@@ -19,6 +19,8 @@
   ];
 
   extraPackages = with pkgs; [
+    xclip
+
     alejandra
   ];
 

@@ -3,6 +3,7 @@
     # line numbers
     number = true;
     relativenumber = true;
+    numberwidth = 5;
 
     # tabs and spaces
     tabstop = 2;

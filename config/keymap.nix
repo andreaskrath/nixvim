@@ -106,7 +106,7 @@ in {
       mode = normal;
       key = "<leader>fg";
       action = ":Telescope live_grep<cr>";
-      options.desc = "N/A";
+      options.desc = "Workspace search";
     }
     {
       mode = normal;

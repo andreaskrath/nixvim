@@ -111,5 +111,13 @@ in {
       action = ":Telescope live_grep<cr>";
       options.desc = "N/A";
     }
+    {
+      mode = normal;
+      key = "<leader>d";
+      action = ":Telescope diagnostics bufnr=0<cr>";
+      options = {
+        desc = "Document diagnostics";
+      };
+    }
   ];
 }

@@ -17,6 +17,8 @@
     ./plugin/conform.nix
   ];
 
+  clipboard.providers.xclip.enable = true;
+
   colorschemes.gruvbox = {
     enable = true;
 

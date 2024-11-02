@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   imports = [
     ./keymap.nix
     ./option.nix
@@ -16,6 +16,10 @@
     ./plugin/lualine.nix
     ./plugin/trouble.nix
     ./plugin/conform.nix
+  ];
+
+  extraPackages = with pkgs; [
+    alejandra
   ];
 
   clipboard.providers.xclip.enable = true;

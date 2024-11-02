@@ -16,12 +16,14 @@
     ./plugin/lualine.nix
     ./plugin/trouble.nix
     ./plugin/conform.nix
+    ./plugin/lsp.nix
   ];
 
   extraPackages = with pkgs; [
     xclip
 
     alejandra
+    nixd
   ];
 
   clipboard.providers.xclip.enable = true;

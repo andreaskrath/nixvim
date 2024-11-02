@@ -2,6 +2,7 @@
   imports = [
     ./keymap.nix
     ./option.nix
+    ./performance.nix
 
     # plugins
     ./plugin/nvim-tree.nix

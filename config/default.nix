@@ -12,6 +12,7 @@
     ./plugin/cmp.nix
     ./plugin/treesitter.nix
     ./plugin/web-devicons.nix
+    ./plugin/lualine.nix
   ];
 
   colorschemes.gruvbox = {

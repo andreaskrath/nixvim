@@ -19,6 +19,9 @@
     ./plugin/lsp.nix
   ];
 
+  viAlias = true;
+  vimAlias = true;
+
   extraPackages = with pkgs; [
     xclip
 

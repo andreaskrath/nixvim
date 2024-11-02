@@ -116,5 +116,15 @@ in {
         desc = "Document diagnostics";
       };
     }
+
+    # diagnostics
+    {
+      mode = normal;
+      key = "<leader>e";
+      action = ":lua vim.diagnostic.open_float()<cr>";
+      options = {
+        desc = "Open diagnostic under cursor";
+      };
+    }
   ];
 }

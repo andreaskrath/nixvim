@@ -5,6 +5,7 @@ in {
   globals.mapleader = " ";
 
   keymaps = [
+    # movement
     {
       mode = [normal visual];
       key = "gs";
@@ -15,7 +16,6 @@ in {
         silent = true;
       };
     }
-
     {
       mode = [normal visual];
       key = "gh";
@@ -26,7 +26,6 @@ in {
         silent = true;
       };
     }
-
     {
       mode = [normal visual];
       key = "gl";
@@ -37,7 +36,6 @@ in {
         silent = true;
       };
     }
-
     {
       mode = [normal visual];
       key = "0";
@@ -48,7 +46,6 @@ in {
         silent = true;
       };
     }
-
     {
       mode = [normal visual];
       key = "$";
@@ -60,6 +57,7 @@ in {
       };
     }
 
+    # buffers
     {
       mode = normal;
       key = "gn";
@@ -70,7 +68,6 @@ in {
         silent = true;
       };
     }
-
     {
       mode = normal;
       key = "gp";

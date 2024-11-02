@@ -5,6 +5,8 @@
     relativenumber = true;
     numberwidth = 5;
 
+    signcolumn = "no";
+
     # tabs and spaces
     tabstop = 2;
     softtabstop = 2;

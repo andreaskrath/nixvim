@@ -3,6 +3,7 @@
     ./keymap.nix
     ./option.nix
     ./performance.nix
+    ./diagnostics.nix
 
     # plugins
     ./plugin/nvim-tree.nix

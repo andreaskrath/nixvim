@@ -4,6 +4,7 @@
     ./option.nix
     ./performance.nix
     ./diagnostics.nix
+    ./autocmd.nix
 
     # plugins
     ./plugin/nvim-tree.nix

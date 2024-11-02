@@ -25,6 +25,7 @@
 
   extraPackages = with pkgs; [
     xclip
+    ripgrep
 
     alejandra
     nixd

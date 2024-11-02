@@ -60,6 +60,28 @@ in {
       };
     }
 
+    {
+      mode = normal;
+      key = "gn";
+      action = ":bnext<cr>";
+      options = {
+        desc = "Move to next buffer";
+        noremap = true;
+        silent = true;
+      };
+    }
+
+    {
+      mode = normal;
+      key = "gp";
+      action = ":bprevious<cr>";
+      options = {
+        desc = "Move to previous buffer";
+        noremap = true;
+        silent = true;
+      };
+    }
+
     # nvim-tree
     {
       mode = normal;

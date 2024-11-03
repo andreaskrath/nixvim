@@ -166,6 +166,16 @@ in {
         noremap = true;
       };
     }
+    {
+      mode = normal;
+      key = "<leader>D";
+      action = ":Telescope diagnostics<cr>";
+      options = {
+        desc = "Workspace diagnostics (depends on LSP)";
+        silent = true;
+        noremap = true;
+      };
+    }
 
     # diagnostics
     {

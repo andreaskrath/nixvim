@@ -35,9 +35,9 @@
         };
 
         mapping = {
-          "<C-j>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 'n'})";
-          "<C-k>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 'n'})";
-          "<C-c>" = "cmp.mapping(cmp.mapping.abort(), {'i', 'n'})";
+          "<C-j>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 'n', 'c'})";
+          "<C-k>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 'n', 'c'})";
+          "<C-c>" = "cmp.mapping(cmp.mapping.abort(), {'i', 'n', 'c'})";
           "<C-b>" = "cmp.mapping(cmp.mapping.scroll_docs(-4), {'i', 'n'})";
           "<C-f>" = "cmp.mapping(cmp.mapping.scroll_docs(4), {'i', 'n'})";
           "<CR>" = "cmp.mapping(cmp.mapping.confirm({ select = true }), {'i', 'n'})";

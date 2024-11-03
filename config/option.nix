@@ -8,11 +8,11 @@
     signcolumn = "yes";
 
     # tabs and spaces
-    tabstop = 2;
-    softtabstop = 2;
-    showtabline = 2;
+    tabstop = 4;
+    softtabstop = 4;
+    showtabline = 4;
     smartindent = true;
-    shiftwidth = 2;
+    shiftwidth = 4;
     expandtab = true;
 
     # disable mouse

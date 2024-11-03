@@ -2,6 +2,28 @@
   plugins.lsp = {
     enable = true;
 
+    keymaps = {
+      silent = true;
+      lspBuf = {
+        gd = {
+          action = "definition";
+          desc = "Goto definition";
+        };
+        gD = {
+          action = "declaration";
+          desc = "Goto declaration";
+        };
+        gt = {
+          action = "type_definition";
+          desc = "Goto type definition";
+        };
+        "<leader>r" = {
+          action = "rename";
+          desc = "Rename";
+        };
+      };
+    };
+
     servers = {
       nixd = {
         enable = true;

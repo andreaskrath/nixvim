@@ -192,26 +192,6 @@ in {
     # lsp
     {
       mode = normal;
-      key = "gd";
-      action = ":Telescope lsp_definitions<cr>";
-      options = {
-        desc = "Goto definition";
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = normal;
-      key = "gD";
-      action = ":lua vim.lsp.buf.declaration<cr>";
-      options = {
-        desc = "Goto declaration";
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = normal;
       key = "gr";
       action = ":Telescope lsp_references<cr>";
       options = {
@@ -226,26 +206,6 @@ in {
       action = ":Telescope lsp_implementations<cr>";
       options = {
         desc = "Goto implementations";
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = normal;
-      key = "gt";
-      action = ":Telescope lsp_type_definitions<cr>";
-      options = {
-        desc = "Goto type definition";
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = normal;
-      key = "<leader>r";
-      action = ":lua vim.lsp.buf.rename<cr>";
-      options = {
-        desc = "Rename";
         silent = true;
         noremap = true;
       };

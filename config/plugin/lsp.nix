@@ -55,6 +55,11 @@
         enable = true;
         package = null;
       };
+
+      marksman = {
+        enable = true;
+        package = null;
+      };
     };
   };
 }

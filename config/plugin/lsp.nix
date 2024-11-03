@@ -4,6 +4,7 @@
 
     keymaps = {
       silent = true;
+
       lspBuf = {
         gd = {
           action = "definition";
@@ -22,6 +23,49 @@
           desc = "Rename";
         };
       };
+
+      extra = [
+        {
+          mode = "n";
+          key = "gr";
+          action = ":Telescope lsp_references<cr>";
+          options = {
+            desc = "Goto references";
+            silent = true;
+            noremap = true;
+          };
+        }
+        {
+          mode = "n";
+          key = "gi";
+          action = ":Telescope lsp_implementations<cr>";
+          options = {
+            desc = "Goto implementations";
+            silent = true;
+            noremap = true;
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>s";
+          action = ":Telescope lsp_document_symbols<cr>";
+          options = {
+            desc = "Document symbols";
+            silent = true;
+            noremap = true;
+          };
+        }
+        {
+          mode = "n";
+          key = "<leader>S";
+          action = ":Telescope lsp_workspace_symbols<cr>";
+          options = {
+            desc = "Workspace symbols";
+            silent = true;
+            noremap = true;
+          };
+        }
+      ];
     };
 
     servers = {

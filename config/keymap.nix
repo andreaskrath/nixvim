@@ -57,6 +57,28 @@ in {
       };
     }
 
+    # paste
+    {
+      mode = normal;
+      key = "U";
+      action = "<C-r>";
+      options = {
+        desc = "Redo";
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      mode = normal;
+      key = "<C-r>";
+      action = "<Nop>";
+      options = {
+        desc = "Disable <C-r> for redo";
+        noremap = true;
+        silent = true;
+      };
+    }
+
     # buffers
     {
       mode = normal;

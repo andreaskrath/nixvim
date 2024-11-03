@@ -16,7 +16,6 @@
     ./plugin/treesitter.nix
     ./plugin/web-devicons.nix
     ./plugin/lualine.nix
-    ./plugin/trouble.nix
     ./plugin/conform.nix
     ./plugin/lsp.nix
     ./plugin/gitsigns.nix

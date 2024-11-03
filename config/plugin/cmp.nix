@@ -13,9 +13,8 @@
 
         formatting = {
           fields = [
-            "kind"
             "abbr"
-            "menu"
+            "kind"
           ];
         };
 

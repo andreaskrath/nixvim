@@ -6,6 +6,10 @@
       silent = true;
 
       lspBuf = {
+        "<leader>a" = {
+          action = "code_action";
+          desc = "Code action";
+        };
         gd = {
           action = "definition";
           desc = "Goto definition";

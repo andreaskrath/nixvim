@@ -5,6 +5,7 @@
     extensions = {
       file-browser.enable = true;
       fzf-native.enable = true;
+      ui-select.enable = true;
     };
 
     settings = {
@@ -17,6 +18,14 @@
         sorting_strategy = "ascending";
         initial_mode = "normal";
       };
+
+      extensions.__raw = ''
+        {
+          ['ui-select'] = {
+            require("telescope.themes").get_cursor {}
+          }
+        }
+      '';
     };
   };
 }

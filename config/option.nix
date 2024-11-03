@@ -32,5 +32,7 @@
     fileencoding = "utf-8";
 
     showmode = false;
+
+    scrolloff = 5;
   };
 }

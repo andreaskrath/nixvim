@@ -50,6 +50,11 @@
           };
         };
       };
+
+      taplo = {
+        enable = true;
+        package = null;
+      };
     };
   };
 }

@@ -14,6 +14,7 @@
         nix = ["alejandra"];
         rust = ["rustfmt"];
         toml = ["taplo"];
+        haskell = ["ormolu"];
       };
     };
   };

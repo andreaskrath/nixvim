@@ -106,7 +106,11 @@ in {
       mode = normal;
       key = "<leader>F";
       action = ":NvimTreeOpen<cr>";
-      options.desc = "Open file tree";
+      options = {
+        desc = "Open file tree";
+        silent = true;
+        noremap = true;
+      };
     }
 
     # lazy-git
@@ -114,7 +118,11 @@ in {
       mode = normal;
       key = "<leader>lg";
       action = ":LazyGit<cr>";
-      options.desc = "Open LazyGit";
+      options = {
+        desc = "Open LazyGit";
+        silent = true;
+        noremap = true;
+      };
     }
 
     # telescope
@@ -122,13 +130,21 @@ in {
       mode = normal;
       key = "<leader>ff";
       action = ":Telescope find_files<cr>";
-      options.desc = "Find project files";
+      options = {
+        desc = "Find project files";
+        silent = true;
+        noremap = true;
+      };
     }
     {
       mode = normal;
       key = "<leader>fg";
       action = ":Telescope live_grep<cr>";
-      options.desc = "Workspace search";
+      options = {
+        desc = "Workspace search";
+        silent = true;
+        noremap = true;
+      };
     }
     {
       mode = normal;
@@ -136,6 +152,8 @@ in {
       action = ":Telescope diagnostics bufnr=0<cr>";
       options = {
         desc = "Document diagnostics";
+        silent = true;
+        noremap = true;
       };
     }
     {
@@ -144,6 +162,8 @@ in {
       action = ":Telescope buffers<cr>";
       options = {
         desc = "Open buffers";
+        silent = true;
+        noremap = true;
       };
     }
 
@@ -154,6 +174,8 @@ in {
       action = ":lua vim.diagnostic.open_float()<cr>";
       options = {
         desc = "Open diagnostic under cursor";
+        silent = true;
+        noremap = true;
       };
     }
   ];

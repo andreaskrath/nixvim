@@ -24,8 +24,6 @@
 
     termguicolors = true;
 
-    cursorline = true;
-
     timeoutlen = 10;
 
     encoding = "utf-8";

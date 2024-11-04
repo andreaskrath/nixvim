@@ -34,8 +34,22 @@
         };
 
         sources = [
-          {name = "nvim_lsp";}
-          {name = "buffer";}
+          {
+            name = "nvim_lsp";
+            entry_filter.__raw = ''
+              function(entry, ctx)
+                return require("cmp.types").lsp.CompletionItemKind[entry:get_kind()]  ~= "Text"
+              end
+            '';
+          }
+          {
+            name = "buffer";
+            entry_filter.__raw = ''
+              function(entry, ctx)
+                return require("cmp.types").lsp.CompletionItemKind[entry:get_kind()]  ~= "Text"
+              end
+            '';
+          }
           {
             name = "path"; # file system paths
             keywordLength = 3;

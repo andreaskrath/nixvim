@@ -16,6 +16,21 @@
             "abbr"
             "kind"
           ];
+
+          format.__raw = ''
+            function(entry, vim_item)
+              vim_item.menu = ""
+              local label = vim_item.abbr
+              local truncated_label = vim.fn.strcharpart(label, 0, 20)
+              if truncated_label ~= label then
+                vim_item.abbr = truncated_label .. "…"
+              elseif string.len(label) < 20 then
+                local padding = string.rep(" ", 20 - string.len(label))
+                vim_item.abbr = label .. padding
+              end
+              return vim_item
+            end
+          '';
         };
 
         sources = [

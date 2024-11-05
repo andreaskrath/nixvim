@@ -29,14 +29,37 @@
                 vim_item.abbr = label .. padding
               end
 
-              if entry.completion_item.insertText then
-                local cut_off = string.find(entry.completion_item.insertText, ")")
-                if cut_off then
-                  vim_item.menu = string.sub(entry.completion_item.insertText, 1, cut_off)
-                else
-                  vim_item.menu = entry.completion_item.insertText
-                end
+              local function safe_concat(value)
+                  return value ~= nil and tostring(value) or ""
               end
+
+              local ci = entry.completion_item
+              vim_item.menu = "a:" .. safe_concat(ci.labeldetails) ..
+                              " b:" .. safe_concat(ci.kind) ..
+                              " c:" .. safe_concat(ci.tags) ..
+                              " d:" .. safe_concat(ci.detail) ..
+                              " e:" .. safe_concat(ci.preselect) ..
+                              " f:" .. safe_concat(ci.sorttext) ..
+                              " g:" .. safe_concat(ci.filtertext) ..
+                              " h:" .. safe_concat(ci.inserttext) ..
+                              " i:" .. safe_concat(ci.inserttextformat) ..
+                              " j:" .. safe_concat(ci.inserttextmode) ..
+                              " k:" .. safe_concat(ci.textedit) ..
+                              " l:" .. safe_concat(ci.textedittext) ..
+                              " m:" .. safe_concat(ci.additionaltextedits) ..
+                              " n:" .. safe_concat(ci.commitcharacters) ..
+                              " o:" .. safe_concat(ci.command) ..
+                              " p:" .. safe_concat(ci.data) ..
+                              " q:" .. safe_concat(ci.cmp)
+
+              -- if entry.completion_item.insertText then
+              --   local cut_off = string.find(entry.completion_item.insertText, ")")
+              --   if cut_off then
+              --     vim_item.menu = string.sub(entry.completion_item.insertText, 1, cut_off)
+              --   else
+              --     vim_item.menu = entry.completion_item.insertText
+              --   end
+              -- end
 
               return vim_item
             end

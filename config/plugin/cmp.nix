@@ -29,8 +29,8 @@
                 vim_item.abbr = label .. padding
               end
 
-              if entry.completion_item.insertText then
-                vim_item.menu = entry.completion_item.insertText
+              if entry.completion_item.detail then
+                vim_item.menu = entry.completion_item.detail
               end
 
               return vim_item

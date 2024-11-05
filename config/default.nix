@@ -19,7 +19,6 @@
     ./plugin/conform.nix
     ./plugin/lsp.nix
     ./plugin/gitsigns.nix
-    # ./plugin/coq.nix
     ./plugin/rust.nix
   ];
 

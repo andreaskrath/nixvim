@@ -18,5 +18,35 @@
         '';
       };
     }
+
+    # set tabs to 2 spaces
+    {
+      event = ["BufEnter" "BufWinEnter"];
+      callback = {
+        __raw = ''
+          function()
+            vim.opt_local.tabstop = 2
+            vim.opt_local.softtabstop = 2
+            vim.opt_local.shiftwidth = 2
+          end
+        '';
+      };
+      pattern = ["*.nix" "*.js" "*.html" "*.svelte"];
+    }
+
+    # set tabs to 4 spaces
+    {
+      event = ["BufEnter" "BufWinEnter"];
+      callback = {
+        __raw = ''
+          function()
+            vim.opt_local.tabstop = 4
+            vim.opt_local.softtabstop = 4
+            vim.opt_local.shiftwidth = 4
+          end
+        '';
+      };
+      pattern = ["*.rs" "*.go" "*.yaml" "*.yml" "*.toml" "justfile"];
+    }
   ];
 }

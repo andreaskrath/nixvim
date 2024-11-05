@@ -31,5 +31,7 @@
     showmode = false;
 
     scrolloff = 5;
+
+    pumheight = 10;
   };
 }

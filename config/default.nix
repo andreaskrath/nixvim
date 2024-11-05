@@ -12,13 +12,14 @@
     ./plugin/which-key.nix
     ./plugin/telescope.nix
     ./plugin/lazygit.nix
-    ./plugin/cmp.nix
+    # ./plugin/cmp.nix
     ./plugin/treesitter.nix
     ./plugin/web-devicons.nix
     ./plugin/lualine.nix
     ./plugin/conform.nix
     ./plugin/lsp.nix
     ./plugin/gitsigns.nix
+    ./plugin/coq.nix
   ];
 
   viAlias = true;

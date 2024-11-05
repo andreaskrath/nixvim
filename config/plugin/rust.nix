@@ -4,7 +4,7 @@
     rustAnalyzerPackage = null;
 
     settings = {
-      tools.test_executor = "backgroung";
+      tools.test_executor = "background";
 
       default_settings = {
         rust-analyxer = {

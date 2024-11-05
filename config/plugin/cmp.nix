@@ -33,24 +33,24 @@
                   return value ~= nil and tostring(value) or ""
               end
 
+              local function dump(o)
+                if type(o) == 'table' then
+                  local s = '{ '
+                  for k,v in pairs(o) do
+                    if type(k) ~= 'number' then k = '"'..k..'"' end
+                    s = s .. '['..k..'] = ' .. dump(v) .. ','
+                  end
+                  return s .. '} '
+                else
+                  return tostring(o)
+                end
+              end
+
               local ci = entry.completion_item
-              vim_item.menu = "a:" .. safe_concat(ci.labelDetails) ..
-                              " b:" .. safe_concat(ci.kind) ..
-                              " c:" .. safe_concat(ci.tags) ..
-                              " d:" .. safe_concat(ci.detail) ..
-                              " e:" .. safe_concat(ci.preselect) ..
-                              " f:" .. safe_concat(ci.sortText) ..
-                              " g:" .. safe_concat(ci.filterText) ..
-                              " h:" .. safe_concat(ci.insertText) ..
-                              " i:" .. safe_concat(ci.insertTextFormat) ..
-                              " j:" .. safe_concat(ci.insertTextMode) ..
-                              " k:" .. safe_concat(ci.textEdit) ..
-                              " l:" .. safe_concat(ci.textEditText) ..
-                              " m:" .. safe_concat(ci.additionalTextEdits) ..
-                              " n:" .. safe_concat(ci.commitCharacters) ..
-                              " o:" .. safe_concat(ci.command) ..
-                              " p:" .. safe_concat(ci.data) ..
-                              " q:" .. safe_concat(ci.cmp)
+              vim_item.menu = "a:" .. safe_concat(dump(ci.labelDetails)) ..
+                              " k:" .. safe_concat(dump(ci.textEdit)) ..
+                              " m:" .. safe_concat(dump(ci.additionalTextEdits)) ..
+                              " p:" .. safe_concat(dump(ci.data))
 
               -- if entry.completion_item.insertText then
               --   local cut_off = string.find(entry.completion_item.insertText, ")")

@@ -29,37 +29,10 @@
                 vim_item.abbr = label .. padding
               end
 
-              local function safe_concat(value)
-                  return value ~= nil and tostring(value) or ""
-              end
-
-              local function dump(o)
-                if type(o) == 'table' then
-                  local s = '{ '
-                  for k,v in pairs(o) do
-                    if type(k) ~= 'number' then k = '"'..k..'"' end
-                    s = s .. '['..k..'] = ' .. dump(v) .. ','
-                  end
-                  return s .. '} '
-                else
-                  return tostring(o)
-                end
-              end
-
               local ci = entry.completion_item
               if ci.labelDetails and ci.labelDetails.detail then
-                vim_item.menu = ci.labelDetails.detail
+                vim_item.menu = ci.labelDetails.detail:match("^%s*(.-)%s*$")
               end
-              -- vim_item.menu = safe_concat(ci.labelDetails.detail)
-
-              -- if entry.completion_item.insertText then
-              --   local cut_off = string.find(entry.completion_item.insertText, ")")
-              --   if cut_off then
-              --     vim_item.menu = string.sub(entry.completion_item.insertText, 1, cut_off)
-              --   else
-              --     vim_item.menu = entry.completion_item.insertText
-              --   end
-              -- end
 
               return vim_item
             end

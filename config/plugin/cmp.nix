@@ -47,10 +47,10 @@
               end
 
               local ci = entry.completion_item
-              vim_item.menu = "a:" .. safe_concat(dump(ci.labelDetails)) ..
-                              " k:" .. safe_concat(dump(ci.textEdit)) ..
-                              " m:" .. safe_concat(dump(ci.additionalTextEdits)) ..
-                              " p:" .. safe_concat(dump(ci.data))
+              if ci.labelDetails and ci.labelDetails.detail then
+                vim_item.menu = ci.labelDetails.detail
+              end
+              -- vim_item.menu = safe_concat(ci.labelDetails.detail)
 
               -- if entry.completion_item.insertText then
               --   local cut_off = string.find(entry.completion_item.insertText, ")")

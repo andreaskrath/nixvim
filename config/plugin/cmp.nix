@@ -29,8 +29,13 @@
                 vim_item.abbr = label .. padding
               end
 
-              if entry.completion_item.detail then
-                vim_item.menu = entry.completion_item.detail
+              if entry.completion_item.insertText then
+                local cut_off = string.find(entry.completion_item.insertText, ")")
+                if cut_off then
+                  vim_item.menu = string.sub(entry.completion_item.insertText, 1, cut_off)
+                else
+                  vim_item.menu = entry.completion_item.insertText
+                end
               end
 
               return vim_item

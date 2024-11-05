@@ -34,20 +34,20 @@
               end
 
               local ci = entry.completion_item
-              vim_item.menu = "a:" .. safe_concat(ci.labeldetails) ..
+              vim_item.menu = "a:" .. safe_concat(ci.labelDetails) ..
                               " b:" .. safe_concat(ci.kind) ..
                               " c:" .. safe_concat(ci.tags) ..
                               " d:" .. safe_concat(ci.detail) ..
                               " e:" .. safe_concat(ci.preselect) ..
-                              " f:" .. safe_concat(ci.sorttext) ..
-                              " g:" .. safe_concat(ci.filtertext) ..
-                              " h:" .. safe_concat(ci.inserttext) ..
-                              " i:" .. safe_concat(ci.inserttextformat) ..
-                              " j:" .. safe_concat(ci.inserttextmode) ..
-                              " k:" .. safe_concat(ci.textedit) ..
-                              " l:" .. safe_concat(ci.textedittext) ..
-                              " m:" .. safe_concat(ci.additionaltextedits) ..
-                              " n:" .. safe_concat(ci.commitcharacters) ..
+                              " f:" .. safe_concat(ci.sortText) ..
+                              " g:" .. safe_concat(ci.filterText) ..
+                              " h:" .. safe_concat(ci.insertText) ..
+                              " i:" .. safe_concat(ci.insertTextFormat) ..
+                              " j:" .. safe_concat(ci.insertTextMode) ..
+                              " k:" .. safe_concat(ci.textEdit) ..
+                              " l:" .. safe_concat(ci.textEditText) ..
+                              " m:" .. safe_concat(ci.additionalTextEdits) ..
+                              " n:" .. safe_concat(ci.commitCharacters) ..
                               " o:" .. safe_concat(ci.command) ..
                               " p:" .. safe_concat(ci.data) ..
                               " q:" .. safe_concat(ci.cmp)

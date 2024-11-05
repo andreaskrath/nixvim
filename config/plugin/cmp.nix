@@ -11,32 +11,32 @@
           maxViewEntries = 20;
         };
 
-        formatting = {
-          fields = [
-            "abbr"
-            "kind"
-            "menu"
-          ];
+        # formatting = {
+        # fields = [
+        #   "abbr"
+        #   "kind"
+        #   "menu"
+        # ];
 
-          format.__raw = ''
-            function(entry, vim_item)
-              local label = vim_item.abbr
-              local truncated_label = vim.fn.strcharpart(label, 0, 25)
-              if truncated_label ~= label then
-                vim_item.abbr = truncated_label .. "…"
-              elseif string.len(label) < 25 then
-                local padding = string.rep(" ", 25 - string.len(label))
-                vim_item.abbr = label .. padding
-              end
-
-              if entry.completion_item.detail then
-                vim_item.menu = entry.completion_item.detail
-              end
-
-              return vim_item
-            end
-          '';
-        };
+        # format.__raw = ''
+        #   function(entry, vim_item)
+        #     local label = vim_item.abbr
+        #     local truncated_label = vim.fn.strcharpart(label, 0, 25)
+        #     if truncated_label ~= label then
+        #       vim_item.abbr = truncated_label .. "…"
+        #     elseif string.len(label) < 25 then
+        #       local padding = string.rep(" ", 25 - string.len(label))
+        #       vim_item.abbr = label .. padding
+        #     end
+        #
+        #     if entry.completion_item.detail then
+        #       vim_item.menu = entry.completion_item.detail
+        #     end
+        #
+        #     return vim_item
+        #   end
+        # '';
+        # };
 
         sources = [
           {

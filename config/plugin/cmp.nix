@@ -8,7 +8,7 @@
         performance = {
           debounce = 60;
           fetchingTimeout = 200;
-          maxViewEntries = 20;
+          maxViewEntries = 10;
         };
 
         formatting = {

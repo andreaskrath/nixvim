@@ -20,6 +20,7 @@
     ./plugin/lsp.nix
     ./plugin/gitsigns.nix
     ./plugin/coq.nix
+    ./plugin/rust.nix
   ];
 
   viAlias = true;

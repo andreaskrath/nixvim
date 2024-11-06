@@ -19,9 +19,9 @@
           }
         ];
         lualine_b = ["branch" "diff"];
-        lualine_c = ["diagnostics"];
+        lualine_c = [];
 
-        lualine_x = [""];
+        lualine_x = ["diagnostics"];
         lualine_y = ["progress"];
         lualine_z = ["location"];
       };

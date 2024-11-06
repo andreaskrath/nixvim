@@ -3,7 +3,15 @@
     # open telescope in find files on starting vim
     {
       event = ["VimEnter"];
-      command = "Telescope find_files";
+      callback = {
+        __raw = ''
+          function()
+            if vim.fn.argc() == 0 then
+              require("telescope.builtin").find_files()
+            end
+          end
+        '';
+      };
     }
 
     # disable semantic highlighting

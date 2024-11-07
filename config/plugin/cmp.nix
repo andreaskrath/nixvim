@@ -47,6 +47,7 @@
                 return require("cmp.types").lsp.CompletionItemKind[entry:get_kind()]  ~= "Text"
               end
             '';
+            priority = 3;
           }
           {
             name = "buffer";
@@ -55,12 +56,29 @@
                 return require("cmp.types").lsp.CompletionItemKind[entry:get_kind()]  ~= "Text"
               end
             '';
+            priority = 2;
           }
           {
             name = "path"; # file system paths
             keywordLength = 3;
+            priority = 1;
           }
         ];
+
+        sorting = {
+          priority_weight = 1;
+          comparators = [
+            "require('cmp.config.compare').offset"
+            "require('cmp.config.compare').exact"
+            "require('cmp.config.compare').score"
+            "require('cmp.config.compare').recently_used"
+            "require('cmp.config.compare').locality"
+            "require('cmp.config.compare').kind"
+            "require('cmp.config.compare').sort_text"
+            "require('cmp.config.compare').length"
+            "require('cmp.config.compare').order"
+          ];
+        };
 
         window = {
           completion = {

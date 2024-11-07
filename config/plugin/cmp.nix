@@ -4,6 +4,7 @@
       enable = true;
       settings = {
         autoEnableSources = true;
+        preselect = "cmp.PreselectMode.None";
 
         performance = {
           debounce = 60;

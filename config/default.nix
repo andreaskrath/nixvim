@@ -21,6 +21,7 @@
     ./plugin/gitsigns.nix
     ./plugin/rust.nix
     ./plugin/fidget.nix
+    ./plugin/statuscol.nix
   ];
 
   viAlias = true;

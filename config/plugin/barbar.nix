@@ -1,20 +1,37 @@
 let
   normal = "n";
   visual = "v";
+
+  colors = {
+    # termianl bg color
+    bg = "#32302f";
+    orange = "#fe8019";
+    white = "#ffffff";
+    green = "#b8bb26";
+
+    # the default gray used by barbar
+    gray = "#7c6f64";
+    # the default bg for barbar tabline
+    tabline_default = "#3c3836";
+  };
 in {
   plugins.barbar = {
     enable = true;
 
     luaConfig.post = ''
-      -- disables the red color from modified files
-      vim.api.nvim_set_hl(0, "BufferCurrentMod", {})
-      vim.api.nvim_set_hl(0, "BufferVisibleMod", {})
-      vim.api.nvim_set_hl(0, "BufferInactiveMod", {})
+      vim.api.nvim_set_hl(0, "BufferCurrent", { fg = "${colors.green}" })
+      vim.api.nvim_set_hl(0, "BufferCurrentIndex", { fg = "${colors.orange}" })
+      vim.api.nvim_set_hl(0, "BufferCurrentMod", { fg = "${colors.green}" })
+      vim.api.nvim_set_hl(0, "BufferCurrentModBtn", { fg = "${colors.white}" })
+      vim.api.nvim_set_hl(0, "BufferCurrentSign", { bg = "${colors.bg}" })
 
-      -- makes current buffer bg same as editor
-      vim.api.nvim_set_hl(0, "BufferCurrent", { bg = "#32302f"})
-      vim.api.nvim_set_hl(0, "BufferCurrentIcon", { bg = "#32302f"})
-      vim.api.nvim_set_hl(0, "BufferCurrentIndex", { bg = "#32302f"})
+      vim.api.nvim_set_hl(0, "BufferVisibleIndex", { fg = "${colors.orange}", bg = "${colors.tabline_default}" })
+      vim.api.nvim_set_hl(0, "BufferVisibleMod", { fg = "${colors.gray}", bg = "${colors.tabline_default}" })
+      vim.api.nvim_set_hl(0, "BufferVisibleModBtn", { fg = "${colors.white}", bg = "${colors.tabline_default}" })
+
+      vim.api.nvim_set_hl(0, "BufferInactiveIndex", { fg = "${colors.orange}", bg = "${colors.tabline_default}" })
+      vim.api.nvim_set_hl(0, "BufferInactiveMod", { fg = "${colors.gray}", bg = "${colors.tabline_default}" })
+      vim.api.nvim_set_hl(0, "BufferInactiveModBtn", { fg = "${colors.white}", bg= "${colors.tabline_default}" })
     '';
 
     settings = {
@@ -25,8 +42,8 @@ in {
         buffer_index = true;
         button = false;
         filetype = {
-          custom_colors = true;
-          enabled = true;
+          custom_colors = false;
+          enabled = false;
         };
       };
     };

@@ -37,6 +37,7 @@
   ];
 
   extraConfigLuaPost = ''
+    -- makes signcolumn bg transparent
     vim.api.nvim_set_hl(0, "SignColumn", {})
   '';
 
@@ -51,6 +52,7 @@
     settings = {
       terminal_colors = true;
       palette_overrides = {
+        # makes nvim bg color match terminals
         dark0 = "#32302f";
       };
     };

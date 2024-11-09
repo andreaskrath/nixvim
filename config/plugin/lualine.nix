@@ -25,18 +25,6 @@
         lualine_y = ["progress"];
         lualine_z = ["location"];
       };
-
-      tabline = {
-        lualine_a = [
-          {
-            __unkeyed-1 = "buffers";
-            symbols = {
-              modified = "[+]";
-              alternate_file = "";
-            };
-          }
-        ];
-      };
     };
   };
 }

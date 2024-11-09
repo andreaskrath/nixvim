@@ -22,6 +22,7 @@
     ./plugin/rust.nix
     ./plugin/fidget.nix
     ./plugin/statuscol.nix
+    ./plugin/barbar.nix
   ];
 
   viAlias = true;

@@ -13,6 +13,8 @@ in {
 
       -- makes current buffer bg same as editor
       vim.api.nvim_set_hl(0, "BufferCurrent", { bg = "#32302f"})
+      vim.api.nvim_set_hl(0, "BufferCurrentIcon", { bg = "#32302f"})
+      vim.api.nvim_set_hl(0, "BufferCurrentIndex", { bg = "#32302f"})
     '';
 
     settings = {
@@ -22,6 +24,10 @@ in {
       icons = {
         buffer_index = true;
         button = false;
+        filetype = {
+          custom_colors = true;
+          enabled = true;
+        };
       };
     };
 

@@ -23,6 +23,7 @@
     ./plugin/fidget.nix
     ./plugin/statuscol.nix
     ./plugin/barbar.nix
+    ./plugin/neogit.nix
   ];
 
   viAlias = true;

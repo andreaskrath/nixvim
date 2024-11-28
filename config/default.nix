@@ -35,6 +35,7 @@
 
     alejandra
     nixd
+    marksman
   ];
 
   extraConfigLuaPost = ''

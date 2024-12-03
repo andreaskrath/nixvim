@@ -98,6 +98,11 @@
         package = null;
         installGhc = false;
       };
+
+      ts_ls = {
+        enable = true;
+        package = null;
+      };
     };
   };
 }

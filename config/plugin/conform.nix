@@ -16,6 +16,7 @@
         toml = ["taplo"];
         go = ["gofmt"];
         haskell = ["ormolu"];
+        javascript = ["biome"];
       };
     };
   };

@@ -166,5 +166,17 @@ in {
         noremap = true;
       };
     }
+
+    # neogit
+    {
+      mode = normal;
+      key = "<leader>gg";
+      action = ":Neogit<cr>";
+      options = {
+        desc = "Open Neogit";
+        silent = true;
+        noremap = true;
+      };
+    }
   ];
 }

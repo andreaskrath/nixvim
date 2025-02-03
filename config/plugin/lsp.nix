@@ -103,6 +103,11 @@
         enable = true;
         package = null;
       };
+
+      clangd = {
+        enable = true;
+        package = null;
+      };
     };
   };
 }

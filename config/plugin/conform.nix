@@ -17,6 +17,7 @@
         go = ["gofmt"];
         haskell = ["ormolu"];
         javascript = ["biome"];
+        cpp = ["clang-format"];
       };
     };
   };

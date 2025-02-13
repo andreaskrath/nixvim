@@ -38,6 +38,21 @@
     marksman
   ];
 
+  extraConfigLua = ''
+    -- This prevents rust-analyzer errors cause of cancelled requests.
+    -- Cancelled requests happen most often because a newer request has been received.
+    vim.lsp.handlers["window/showMessage"] = function(_, result, ctx)
+      local client = vim.lsp.get_client_by_id(ctx.client_id)
+      local level = result.type
+      local message = result.message
+      if client and client.name == "rust_analyzer" then
+        if not message:match("server cancelled the request") then
+          vim.notify(message, level)
+        end
+      end
+    end
+  '';
+
   extraConfigLuaPost = ''
     -- makes signcolumn bg transparent
     vim.api.nvim_set_hl(0, "SignColumn", {})

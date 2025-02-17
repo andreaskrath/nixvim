@@ -24,6 +24,8 @@
     ./plugin/statuscol.nix
     ./plugin/barbar.nix
     ./plugin/neogit.nix
+    ./plugin/dap.nix
+    ./plugin/dap-ui.nix
   ];
 
   viAlias = true;

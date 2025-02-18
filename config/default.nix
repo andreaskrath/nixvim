@@ -7,11 +7,9 @@
     ./autocmd.nix
 
     # plugins
-    ./plugin/nvim-tree.nix
     ./plugin/nvim-autopairs.nix
     ./plugin/which-key.nix
     ./plugin/telescope.nix
-    ./plugin/lazygit.nix
     ./plugin/cmp.nix
     ./plugin/treesitter.nix
     ./plugin/web-devicons.nix
@@ -26,6 +24,7 @@
     ./plugin/neogit.nix
     ./plugin/dap.nix
     ./plugin/dap-ui.nix
+    ./plugin/oil.nix
   ];
 
   viAlias = true;

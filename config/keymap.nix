@@ -79,25 +79,13 @@ in {
       };
     }
 
-    # nvim-tree
+    # oil
     {
       mode = normal;
       key = "<leader>F";
-      action = ":NvimTreeOpen<cr>";
+      action = ":Oil<cr>";
       options = {
-        desc = "Open file tree";
-        silent = true;
-        noremap = true;
-      };
-    }
-
-    # lazy-git
-    {
-      mode = normal;
-      key = "<leader>lg";
-      action = ":LazyGit<cr>";
-      options = {
-        desc = "Open LazyGit";
+        desc = "Open directory buffer";
         silent = true;
         noremap = true;
       };

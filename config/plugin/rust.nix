@@ -6,17 +6,6 @@
     settings = {
       tools.test_executor = "background";
 
-      server = {
-        dap.adapters.lldb = {
-          type = "server";
-          port = "${''$''}{port}";
-          executable = {
-            command = "codelldb";
-            args = ["--port" "${''$''}{port}"];
-          };
-        };
-      };
-
       default_settings = {
         rust-analyzer = {
           procMacro.enable = true;

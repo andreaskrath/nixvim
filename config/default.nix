@@ -24,6 +24,7 @@
     ./plugin/neogit.nix
     ./plugin/dap.nix
     ./plugin/dap-ui.nix
+    ./plugin/dap-virtual-text.nix
     ./plugin/oil.nix
   ];
 

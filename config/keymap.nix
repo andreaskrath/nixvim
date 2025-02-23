@@ -223,7 +223,7 @@ in {
       key = "<A-q>";
       action = ":DapTerminate<cr>";
       options = {
-        desc = "Steps the DAP execution";
+        desc = "Stops the DAP execution";
         silent = true;
         noremap = true;
       };

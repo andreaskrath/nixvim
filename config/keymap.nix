@@ -114,10 +114,20 @@ in {
     }
     {
       mode = normal;
-      key = "<leader>d";
+      key = "<leader>Dd";
       action = ":Telescope diagnostics bufnr=0<cr>";
       options = {
         desc = "Document diagnostics";
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = normal;
+      key = "<leader>Dw";
+      action = ":Telescope diagnostics<cr>";
+      options = {
+        desc = "Workspace diagnostics (depends on LSP)";
         silent = true;
         noremap = true;
       };
@@ -128,16 +138,6 @@ in {
       action = ":Telescope buffers<cr>";
       options = {
         desc = "Open buffers";
-        silent = true;
-        noremap = true;
-      };
-    }
-    {
-      mode = normal;
-      key = "<leader>D";
-      action = ":Telescope diagnostics<cr>";
-      options = {
-        desc = "Workspace diagnostics (depends on LSP)";
         silent = true;
         noremap = true;
       };
@@ -170,7 +170,7 @@ in {
     # dap
     {
       mode = normal;
-      key = "<A-b>";
+      key = "<leader>db";
       action = ":DapToggleBreakpoint<cr>";
       options = {
         desc = "Toggles a breakpoint on the current line";
@@ -180,7 +180,7 @@ in {
     }
     {
       mode = normal;
-      key = "<A-c>";
+      key = "<leader>dc";
       action = ":DapContinue<cr>";
       options = {
         desc = "Continue to the next breakpoint";
@@ -190,7 +190,7 @@ in {
     }
     {
       mode = normal;
-      key = "<A-s>";
+      key = "<leader>ds";
       action = ":DapStepOver<cr>";
       options = {
         desc = "Steps over the current instruction";
@@ -200,7 +200,7 @@ in {
     }
     {
       mode = normal;
-      key = "<A-i>";
+      key = "<leader>di";
       action = ":DapStepInto<cr>";
       options = {
         desc = "Steps into the current instruction";
@@ -210,7 +210,7 @@ in {
     }
     {
       mode = normal;
-      key = "<A-o>";
+      key = "<leader>do";
       action = ":DapStepOut<cr>";
       options = {
         desc = "Steps out of the current instruction";
@@ -220,7 +220,7 @@ in {
     }
     {
       mode = normal;
-      key = "<A-q>";
+      key = "<leader>dq";
       action = ":DapTerminate<cr>";
       options = {
         desc = "Stops the DAP execution";

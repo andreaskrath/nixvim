@@ -166,5 +166,67 @@ in {
         noremap = true;
       };
     }
+
+    # dap
+    {
+      mode = normal;
+      key = "<A-b>";
+      action = ":DapToggleBreakpoint<cr>";
+      options = {
+        desc = "Toggles a breakpoint on the current line";
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = normal;
+      key = "<A-c>";
+      action = ":DapContinue<cr>";
+      options = {
+        desc = "Continue to the next breakpoint";
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = normal;
+      key = "<A-s>";
+      action = ":DapStepOver<cr>";
+      options = {
+        desc = "Steps over the current instruction";
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = normal;
+      key = "<A-i>";
+      action = ":DapStepInto<cr>";
+      options = {
+        desc = "Steps into the current instruction";
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = normal;
+      key = "<A-o>";
+      action = ":DapStepOut<cr>";
+      options = {
+        desc = "Steps out of the current instruction";
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = normal;
+      key = "<A-q>";
+      action = ":DapTerminate<cr>";
+      options = {
+        desc = "Steps the DAP execution";
+        silent = true;
+        noremap = true;
+      };
+    }
   ];
 }

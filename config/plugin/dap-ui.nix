@@ -4,13 +4,14 @@
     settings = {
       layouts = [
         {
+          # elements are displayed in the opposite order of their definition
           elements = [
             {
-              id = "scopes";
+              id = "console";
               size = 0.5;
             }
             {
-              id = "console";
+              id = "scopes";
               size = 0.5;
             }
           ];

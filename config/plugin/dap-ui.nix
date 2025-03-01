@@ -21,8 +21,12 @@
         {
           elements = [
             {
+              id = "watches";
+              size = 0.5;
+            }
+            {
               id = "stacks";
-              size = 1;
+              size = 0.5;
             }
           ];
           position = "left";

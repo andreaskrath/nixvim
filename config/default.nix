@@ -26,6 +26,7 @@
     ./plugin/dap-ui.nix
     ./plugin/dap-virtual-text.nix
     ./plugin/oil.nix
+    ./plugin/python.nix
   ];
 
   viAlias = true;

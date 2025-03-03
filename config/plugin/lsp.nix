@@ -108,6 +108,16 @@
         enable = true;
         package = null;
       };
+
+      ruff = {
+        enable = true;
+        package = null;
+      };
+
+      pyright = {
+        enable = true;
+        package = null;
+      };
     };
   };
 }

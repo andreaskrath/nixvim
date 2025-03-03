@@ -18,6 +18,7 @@
         haskell = ["ormolu"];
         javascript = ["biome"];
         cpp = ["clang-format"];
+        python = ["black"];
       };
     };
   };

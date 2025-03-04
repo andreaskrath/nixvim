@@ -18,7 +18,13 @@
         haskell = ["ormolu"];
         javascript = ["biome"];
         cpp = ["clang-format"];
-        python = ["black"];
+        python = ["ruff_format"];
+      };
+
+      formatters = {
+        ruff_format = {
+          prepend_args = ["--line-length" "120"];
+        };
       };
     };
   };

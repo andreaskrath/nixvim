@@ -117,6 +117,7 @@
       pyright = {
         enable = true;
         package = null;
+        settings.python.analysis.typeCheckingMode = "strict";
       };
     };
   };

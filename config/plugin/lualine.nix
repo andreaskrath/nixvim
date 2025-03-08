@@ -19,7 +19,12 @@
           }
         ];
         lualine_b = ["branch" "diff"];
-        lualine_c = [];
+        lualine_c = [
+          {
+            __unkeyed-1 = "filename";
+            path = 1;
+          }
+        ];
 
         lualine_x = ["diagnostics"];
         lualine_y = ["progress"];

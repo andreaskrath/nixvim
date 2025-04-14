@@ -18,6 +18,7 @@
         haskell = ["ormolu"];
         javascript = ["prettier"];
         typescript = ["prettier"];
+        html = ["prettier"];
         svelte = ["prettier"];
         cpp = ["clang-format"];
         python = ["ruff_format"];

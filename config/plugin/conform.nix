@@ -16,7 +16,9 @@
         toml = ["taplo"];
         go = ["gofmt"];
         haskell = ["ormolu"];
-        javascript = ["biome"];
+        javascript = ["prettier"];
+        typescript = ["prettier"];
+        svelte = ["prettier"];
         cpp = ["clang-format"];
         python = ["ruff_format"];
       };

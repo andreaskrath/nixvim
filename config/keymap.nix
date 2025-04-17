@@ -228,5 +228,25 @@ in {
         noremap = true;
       };
     }
+
+    # Keep selection when indenting
+    {
+      mode = visual;
+      key = ">";
+      action = ">gv";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+    {
+      mode = visual;
+      key = "<";
+      action = "<gv";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
   ];
 }

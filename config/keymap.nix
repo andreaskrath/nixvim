@@ -248,5 +248,16 @@ in {
         noremap = true;
       };
     }
+
+    # Move cursor to end of yanked selection
+    {
+      mode = visual;
+      key = "y";
+      action = "y`]";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
   ];
 }

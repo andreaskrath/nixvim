@@ -6,7 +6,7 @@
       callback = {
         __raw = ''
           function()
-            if vim.fn.argc() == 0 then
+            if vim.fn.argc() == 0 and not vim.g.disable_telescope_startup then
               require("telescope.builtin").find_files()
             end
           end

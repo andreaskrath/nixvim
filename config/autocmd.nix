@@ -56,5 +56,10 @@
       };
       pattern = ["*.rs" "*.go" "*.yaml" "*.yml" "*.toml" "justfile"];
     }
+
+    {
+      event = ["BufEnter" "BufWinEnter"];
+      command = "stopinsert";
+    }
   ];
 }

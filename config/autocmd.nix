@@ -57,9 +57,18 @@
       pattern = ["*.rs" "*.go" "*.yaml" "*.yml" "*.toml" "justfile"];
     }
 
+    # Enter normal mode on exiting Telescope
     {
-      event = ["BufEnter" "BufWinEnter"];
-      command = "stopinsert";
+      event = ["BufLeave" "BufWinLeave"];
+      callback = {
+        __raw = ''
+          function(event)
+            if vim.bo[event.buf].filetype == "TelescopePrompt" then
+              vim.api.nvim_exec2("silent! stopinsert!", {})
+            end
+          end
+        '';
+      };
     }
   ];
 }

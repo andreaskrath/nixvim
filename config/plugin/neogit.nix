@@ -1,7 +1,6 @@
 {
   plugins.neogit = {
     enable = true;
-    gitPackage = null;
 
     settings = {
       disable_hint = true;

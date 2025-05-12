@@ -1,5 +1,5 @@
 {
-  diagnostics = {
+  diagnostic.settings = {
     signs = false;
   };
 }

@@ -3,8 +3,9 @@
     ./keymap.nix
     ./option.nix
     ./performance.nix
-    ./diagnostics.nix
+    ./diagnostic.nix
     ./autocmd.nix
+    ./dependencies.nix
 
     # plugins
     ./plugin/nvim-autopairs.nix

@@ -10,7 +10,7 @@
           name = "File";
           program = "\${file}";
           cwd = "\${workspaceFolder}";
-          justMyCode = true;
+          justMyCode = false;
           console = "integratedTerminal";
         }
 
@@ -20,7 +20,7 @@
           name = "Main";
           program = "\${workspaceFolder}/src/main.py";
           cwd = "\${workspaceFolder}";
-          justMyCode = true;
+          justMyCode = false;
           console = "integratedTerminal";
         }
       ];

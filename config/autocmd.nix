@@ -39,7 +39,7 @@
           end
         '';
       };
-      pattern = ["*.nix" "*.js" "*.html" "*.svelte"];
+      pattern = ["*.nix" "*.js" "*.html" "*.svelte" "*.ts"];
     }
 
     # set tabs to 4 spaces
@@ -54,7 +54,7 @@
           end
         '';
       };
-      pattern = ["*.rs" "*.go" "*.yaml" "*.yml" "*.toml" "justfile"];
+      pattern = ["*.rs" "*.go" "*.yaml" "*.yml" "*.toml" "justfile" "*.py"];
     }
 
     # Enter normal mode on exiting Telescope

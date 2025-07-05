@@ -31,16 +31,6 @@
       extra = [
         {
           mode = "n";
-          key = "gr";
-          action = ":Telescope lsp_references<cr>";
-          options = {
-            desc = "Goto references";
-            silent = true;
-            noremap = true;
-          };
-        }
-        {
-          mode = "n";
           key = "gi";
           action = ":Telescope lsp_implementations<cr>";
           options = {

@@ -263,9 +263,9 @@ in {
 
     # Move to next item in quicklist
     {
-      mode = [normal insert];
-      key = "<A-j>";
-      action = ":cnext<cr>";
+      mode = [normal];
+      key = "<C-j>";
+      action = "<CMD>cnext<CR>";
       options = {
         silent = true;
         noremap = true;
@@ -274,9 +274,9 @@ in {
 
     # Move to previous item in quicklist
     {
-      mode = [normal insert];
-      key = "<A-k>";
-      action = ":cprev<cr>";
+      mode = [normal];
+      key = "<C-k>";
+      action = "<CMD>cprev<CR>";
       options = {
         silent = true;
         noremap = true;

@@ -1,6 +1,7 @@
 {...}: let
   normal = "n";
   visual = "v";
+  insert = "i";
 in {
   globals.mapleader = " ";
 
@@ -254,6 +255,39 @@ in {
       mode = visual;
       key = "y";
       action = "y`]";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+
+    # Move to next item in quicklist
+    {
+      mode = [normal insert];
+      key = "<A-j>";
+      action = ":cnext<cr>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+
+    # Move to previous item in quicklist
+    {
+      mode = [normal insert];
+      key = "<A-k>";
+      action = ":cprev<cr>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+
+    # Place diagnostics into quickfix list
+    {
+      mode = [normal];
+      key = "<leader>Dq";
+      action = ":lua vim.diagnostic.setqflist()<cr>";
       options = {
         silent = true;
         noremap = true;

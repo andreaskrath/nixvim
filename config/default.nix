@@ -1,33 +1,34 @@
 {pkgs, ...}: {
   imports = [
+    ./autocmd.nix
+    ./dependencies.nix
+    ./diagnostic.nix
     ./keymap.nix
     ./option.nix
     ./performance.nix
-    ./diagnostic.nix
-    ./autocmd.nix
-    ./dependencies.nix
 
     # plugins
-    ./plugin/nvim-autopairs.nix
-    ./plugin/which-key.nix
-    ./plugin/telescope.nix
-    ./plugin/cmp.nix
-    ./plugin/treesitter.nix
-    ./plugin/web-devicons.nix
-    ./plugin/lualine.nix
-    ./plugin/conform.nix
-    ./plugin/lsp.nix
-    ./plugin/gitsigns.nix
-    ./plugin/rust.nix
-    ./plugin/fidget.nix
-    ./plugin/statuscol.nix
     ./plugin/barbar.nix
-    ./plugin/neogit.nix
-    ./plugin/dap.nix
+    ./plugin/cmp.nix
+    ./plugin/conform.nix
     ./plugin/dap-ui.nix
     ./plugin/dap-virtual-text.nix
+    ./plugin/dap.nix
+    ./plugin/fidget.nix
+    ./plugin/gitsigns.nix
+    ./plugin/hop.nix
+    ./plugin/lsp.nix
+    ./plugin/lualine.nix
+    ./plugin/neogit.nix
+    ./plugin/nvim-autopairs.nix
     ./plugin/oil.nix
     ./plugin/python.nix
+    ./plugin/rust.nix
+    ./plugin/statuscol.nix
+    ./plugin/telescope.nix
+    ./plugin/treesitter.nix
+    ./plugin/web-devicons.nix
+    ./plugin/which-key.nix
   ];
 
   viAlias = true;

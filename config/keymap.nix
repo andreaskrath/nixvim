@@ -293,5 +293,16 @@ in {
         noremap = true;
       };
     }
+
+    # Hop
+    {
+      mode = [normal];
+      key = "gw";
+      action = "<CMD>HopWord<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
   ];
 }

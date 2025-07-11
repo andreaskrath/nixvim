@@ -63,7 +63,7 @@
     };
 
     servers = {
-      nixd = {
+      nil_ls = {
         enable = true;
       };
 

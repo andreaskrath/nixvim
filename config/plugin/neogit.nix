@@ -4,7 +4,7 @@
 
     settings = {
       disable_hint = true;
-      fetch_after_checkout = true;
+      fetch_after_checkout = false;
 
       status = {
         show_head_commit_hash = false;
